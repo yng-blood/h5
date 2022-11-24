@@ -1,0 +1,196 @@
+body{ background-color: yellow;}
+
+.digrl{ position: relative; 
+     border: 3px solid black;
+     margin: 20px; 
+     background-color: blueviolet;
+    height: 70px; width: 70px; 
+    animation: riglef 7s infinite ;
+}
+.digud{ position: relative; 
+    border: 3px solid black;
+    margin: 20px; 
+    background-color: rgb(24, 68, 211);
+   height: 70px; width: 70px; 
+   animation: ud 7s infinite ;
+}
+.digro{ position: relative; 
+    border: 3px solid black;
+    margin: 20px; 
+    background-color: rgb(159, 16, 170);
+   height: 70px; width: 70px; 
+   animation: ro 3s infinite ;
+}
+.digxyz{ position: relative; 
+    border: 3px solid black;
+    margin: 20px; 
+    height: 70px; width: 70px; 
+    background-color: rgb(159, 16, 170);
+   
+   animation: xyz 3s infinite ;
+}
+#itema{ 
+    border: 3px solid black;
+    margin: 20px; 
+    height: 70px; width: 70px; 
+    position: relative;
+    background-color: rgb(46, 165, 208);
+   animation: Xrotate 3s infinite ;
+}
+#itemb{ 
+    border: 3px solid black;
+    margin: 20px; 
+    height: 70px; width: 70px; position: relative;
+    background-color: rgb(192, 31, 31);
+    animation: Yrt 3s infinite ;
+ }
+#itemc{ 
+    position: relative;
+    background-color: rgb(31, 193, 34);
+    animation: Zrt 3s infinite ;
+ }
+
+#flex{ display: flex; }
+/* secondpage */
+.hov{ 
+    border: 0px solid black;
+    margin: 20px; 
+    background-color: rgb(24, 68, 211);
+   height: 70px; width: 80px;
+   transition:all 2s ease-out 0.5s;
+}
+#box1:hover{height: 70px; width: 190px;
+    transition-duration: 3s;}
+#box2:hover{height: 170px; width: 220px;
+    transition-duration: 3s;}
+#box3:hover{height: 70px; width: 190px;
+    transition-duration: 3s; transition-delay: 0.5s;}
+#box4:hover{height: 70px; width: 190px;
+    transition: ease-out;
+     transition-duration: 1s;
+      transition-delay: 0.5s;}
+#box5:hover{height: 70px; width: 190px;
+    transition: ease-in;
+    transition-duration: 3s; 
+    transition-delay: 0.5s;}
+#box6:hover{height: 70px; width: 190px;
+    transition: ease-in-out;
+    transition-duration: 3s; transition-delay: 0.5s;}
+#box7:hover{height: 70px; width: 190px;  
+     transition: ease;
+    transition-duration: 3s;
+     transition-delay: 0.5s;}
+
+/* for 3d index page */
+
+.vehicle{ margin-top: 90px;}
+.build{ position: absolute;
+    top: 300px;
+    left: 90px;
+    height: 10px;
+    margin-top: 0px;
+    animation: rights 10s infinite;
+    animation-fill-mode: both;
+    }
+
+.build2{ position: absolute;
+    left: 1490px;
+    top: 300px;
+    height: 10px;
+    margin-top: 0px;
+    animation: rights2 10s infinite;
+    animation-fill-mode: both;
+    }
+.road{ 
+     animation:roads 10s infinite;
+}
+#cityr{ width: 10vw; }
+#cityr{ width: 60vw; }
+
+#road{ width: fit-content;
+     
+    position: absolute;
+top:422px; }
+#w2{  left: 407px;
+    height: 100px;
+    position: absolute;
+    top: 528px;
+    animation: wrt 1s infinite;}
+
+
+#w1{    left: 756px;
+        height: 100px;
+        position:absolute;
+        top: 528px;
+        animation: wrt 1s infinite; 
+}
+.bframe{height: 900px;
+    position:fixed;
+    left: 102%;
+     width:37200px;
+     background-color:yellow;}
+@keyframes wrt{
+    0%{ transform:rotateZ(0deg);} 
+    20%{ transform:rotateZ(30deg);} 
+    40%{ transform:rotateZ(60deg);} 
+    60%{ transform:rotateZ(180deg);} 
+    80%{ transform:rotateZ(270deg);} 
+    100%{ transform:rotateZ(360deg);}   
+}
+
+@keyframes rights{
+   0%{    transform: translateX(0px);    }
+   100%{   transform:translateX(-900px);  }
+    
+}
+
+@keyframes rights2{
+    0%{    transform: translateX(0px);    }
+    100%{   transform:translateX(-900px);  }
+     
+ }
+@keyframes roads{
+    0%{
+         transform: translateX(10px);      
+     }
+    100%{
+         transform:translateX(-400px);     
+     }
+    }
+
+@keyframes riglef{
+    0%{transform:skewX(0deg);}
+    25%{transform:skewX(20deg);}
+     75%{ transform:skew(-30deg);} 
+    100%{ transform:skew(0deg);}   
+}
+@keyframes ud{
+    0%{ transform: skewY( 0); }
+    25%{ transform: skewY( 20deg);}
+    /* 50%{ transform:skewY(0);} */
+    75%{ transform: skewY(-30deg);} 
+    100%{ transform:skewY(0);}   
+}
+@keyframes ro{
+    
+    100%{ transform:rotateZ(360deg);}   
+}
+@keyframes Xrotate{
+    0%{ transform:rotateX(0deg);} 
+    25%{ transform:rotateX(60deg);} 
+    50%{ transform:rotateX(0deg);} 
+    75%{ transform:rotateX(60deg);} 
+    100%{ transform:rotateX(0deg);}   
+}
+@keyframes Yrt{
+    0%{ transform:rotateY(0deg);} 
+    25%{ transform:rotateY(60deg);} 
+    50%{ transform:rotateY(0deg);} 
+    75%{ transform:rotateY(60deg);} 
+    100%{ transform:rotateY(0deg);}   
+}
+@keyframes Zrt{
+    0%{ transform:rotateZ(0deg);} 
+    50%{ transform:rotateZ(300deg);} 
+    100%{ transform:rotateZ(0deg);}   
+}
